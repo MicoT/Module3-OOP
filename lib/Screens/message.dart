@@ -67,7 +67,7 @@ class Message extends StatelessWidget {
                 subtitle: Container(
                   padding: EdgeInsets.only(top: 5.0),
                   child: Text(
-                    "Want a sponsership?",
+                    "Want a sponsorship?",
                     style: TextStyle(color: Colors.white, fontSize: 15.0),
                   ),
                 ),
@@ -104,7 +104,7 @@ class Message extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           const snackBar = SnackBar(
-              backgroundColor: Colors.grey,
+              backgroundColor: Color(0xFFD50000),
               content: Text("Just for display!",
                   textAlign: TextAlign.center,
                   style: TextStyle(

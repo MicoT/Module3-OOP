@@ -123,7 +123,7 @@ class Search extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           const snackBar = SnackBar(
-              backgroundColor: Colors.grey,
+              backgroundColor: Color(0xFFD50000),
               content: Text("Just for display!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
