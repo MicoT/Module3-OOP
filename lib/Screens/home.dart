@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
                 child: userShout.isEmpty
                     ? Center(
                         child: Text(
-                          "All quite right now... \nNothing to report.",
+                          "All quiet right now... \nNothing to report.",
                           style: TextStyle(
                             fontSize: 30,
                             color: Color(0xff37474f),
@@ -62,6 +62,7 @@ class Home extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
             child: Icon(Icons.add),
+            backgroundColor: Color(0xFFF57F17),
             onPressed: () {
               Navigator.push(
                   context,
