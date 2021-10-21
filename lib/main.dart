@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'package:twitter/Screens/splash_screen.dart';
+import 'package:SHOUT/Screens/splash_screen.dart';
 
 void main() => runApp(MyApp());
 

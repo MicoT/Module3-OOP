@@ -1,5 +1,5 @@
+import 'package:SHOUT/Screens/login_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:twitter/Screens/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

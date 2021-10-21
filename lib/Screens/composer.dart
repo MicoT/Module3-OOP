@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new, unused_field, duplicate_ignore, sized_box_for_whitespace, prefer_final_fields
 
+import 'package:SHOUT/home.dart';
 import 'package:flutter/material.dart';
-import 'package:twitter/home.dart';
+
 import 'create_shout.dart';
 
 final userShoutMaker = TextEditingController();
@@ -72,20 +73,6 @@ class _ShoutMakerState extends State<ShoutMaker> {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              // this comment is for background message
-              // Container(
-              //           height: MediaQuery.of(context).size.height,
-              //           width: MediaQuery.of(context).size.width,
-              //           decoration: BoxDecoration(
-              //               gradient: LinearGradient(
-              //                   begin: Alignment.topCenter,
-              //                   end: Alignment.bottomCenter,
-              //                   colors: [
-              //                 Color(0xFF252525),
-              //                 Color(0xFF414141),
-              //                 Color(0xFF212121)
-              //               ])),
-              //         ),
               Positioned(
                   top: 20,
                   left: 30,
