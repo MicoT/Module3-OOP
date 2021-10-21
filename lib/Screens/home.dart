@@ -17,9 +17,12 @@ class Home extends StatelessWidget {
               new Container(
                 padding: EdgeInsets.only(top: 10.0),
                 child: userShout.isEmpty
-                    ? Center(
+                    ? Container(
+                        padding: EdgeInsets.only(top: 200),
+                        alignment: Alignment.bottomCenter,
                         child: Text(
                           "All quiet right now... \nNothing to report.",
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 30,
                             color: Color(0xff37474f),
