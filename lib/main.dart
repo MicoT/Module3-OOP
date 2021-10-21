@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: const Color(0xff15202C),
-        primaryColorDark: const Color(0xff1B2939),
+        primaryColorDark: const Color(0xff00838f),
         // ignore: deprecated_member_use
         accentColor: const Color(0xff1CA1F1),
       ),
