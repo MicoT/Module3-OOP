@@ -81,7 +81,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                   left: 30,
                   child: CircleAvatar(
                     radius: 25.0,
-                    backgroundImage: AssetImage('assets/DP.png'),
+                    backgroundImage: AssetImage('assets/swag.gif'),
                   )),
               Positioned(
                   top: 10,

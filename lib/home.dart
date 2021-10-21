@@ -36,7 +36,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         title: new Text("SHOUT OUT!"),
         leading: CircleAvatar(
           radius: 5.0,
-          backgroundImage: AssetImage('assets/DP.png'),
+          backgroundImage: AssetImage('assets/swag.gif'),
           child: ClipOval(
             child: new SizedBox(
               width: 10.0,
@@ -65,7 +65,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
                       image: new DecorationImage(
-                        image: AssetImage('assets/DP.png'),
+                        image: AssetImage('assets/swag.gif'),
                       ),
                     ),
                   ),
