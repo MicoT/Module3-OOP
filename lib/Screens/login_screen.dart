@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Align(
                     alignment: Alignment.topCenter,
                     child: Container(
-                      height: 75,
+                      height: 50,
                       width: 100,
                       margin: const EdgeInsets.all(25),
                       child: ElevatedButton(
@@ -103,7 +103,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: ButtonStyle(
                           shape: MaterialStateProperty.all(
                             RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(5),
                             ),
                           ),
                           padding: MaterialStateProperty.all(
