@@ -32,7 +32,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.cyanAccent,
+        backgroundColor: Colors.cyan,
         title: Center(
           child: Image.asset(
             'assets/logo.png',
