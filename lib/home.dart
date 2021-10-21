@@ -33,15 +33,11 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
     return new Scaffold(
       appBar: new AppBar(
         backgroundColor: Colors.cyan,
-        title: new Text("SHOUT OUT!"),
-        leading: CircleAvatar(
-          radius: 5.0,
-          backgroundImage: AssetImage('assets/swag.gif'),
-          child: ClipOval(
-            child: new SizedBox(
-              width: 10.0,
-              height: 10.0,
-            ),
+        title: Center(
+          child: Image.asset(
+            'assets/logo.png',
+            fit: BoxFit.contain,
+            height: 38,
           ),
         ),
       ),
