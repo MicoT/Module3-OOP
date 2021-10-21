@@ -33,6 +33,14 @@ class _ShoutMakerState extends State<ShoutMaker> {
                 });
                 if (_thisText.isNotEmpty) {
                   userShout.add(new Shouttext(shout: userShoutMaker.text));
+                  const snackBar = SnackBar(
+                      backgroundColor: Color(0xFF00C853),
+                      content: Text("Loud and clear!",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w900)));
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) => MyHome()));
                 } else {
@@ -105,6 +113,10 @@ class _ShoutMakerState extends State<ShoutMaker> {
                         border: InputBorder.none,
                         hintText: 'Shout something?',
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 20),
+                        suffixIcon: IconButton(
+                          onPressed: userShoutMaker.clear,
+                          icon: Icon(Icons.clear),
+                        ),
                       ),
                     ),
                   )),

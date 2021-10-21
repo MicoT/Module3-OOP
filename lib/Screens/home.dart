@@ -35,7 +35,7 @@ class Home extends StatelessWidget {
                           child: ListTile(
                             leading: CircleAvatar(
                               radius: 25.0,
-                              backgroundImage: AssetImage('assets/DP.png'),
+                              backgroundImage: AssetImage('assets/swag.gif'),
                             ),
                             title: Text(
                               "Admin",
