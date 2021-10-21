@@ -5,6 +5,8 @@ import 'create_shout.dart';
 import 'composer.dart';
 
 class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,7 +65,7 @@ class Home extends StatelessWidget {
               context, MaterialPageRoute(builder: (context) => Tweet()));
         },
         child: Icon(Icons.edit),
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
     );
   }

@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:twitter/Screens/splash_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         // ignore: deprecated_member_use
         accentColor: const Color(0xff1CA1F1),
       ),
-      home: MyHome(),
+      home: const SplashScreen(),
     );
   }
 }
