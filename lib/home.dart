@@ -32,7 +32,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.cyanAccent,
         title: Center(
           child: Image.asset(
             'assets/logo.png',
@@ -41,7 +41,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
           ),
         ),
       ),
-      //------------------------------------Profile Drawer-------------------------------------
+      //------------------------------------Profile Drawer-------------------------------------//
       drawer: Drawer(
         child: Container(
           color: Theme.of(context).primaryColorDark,
@@ -122,7 +122,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
           ),
         ),
       ),
-      //---------------------------------------Tab buttons------------------------------------
+      //---------------------------------------Tab buttons------------------------------------//
       body: new TabBarView(
         children: <Widget>[
           new Home(),

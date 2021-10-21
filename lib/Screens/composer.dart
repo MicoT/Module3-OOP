@@ -33,6 +33,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                 });
                 if (_thisText.isNotEmpty) {
                   userShout.add(new Shouttext(shout: userShoutMaker.text));
+                  userShoutMaker.clear();
                   const snackBar = SnackBar(
                       backgroundColor: Color(0xFF00C853),
                       content: Text("Loud and clear!",
