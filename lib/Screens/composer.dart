@@ -15,7 +15,7 @@ class ShoutMaker extends StatefulWidget {
 
 class _ShoutMakerState extends State<ShoutMaker> {
   final _formKey = GlobalKey<FormState>();
-  String _enteredText = '';
+  String _thisText = '';
   bool _lock = false;
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                 setState(() {
                   _lock = true;
                 });
-                if (_enteredText.isNotEmpty) {
+                if (_thisText.isNotEmpty) {
                   userShout.add(new Shouttext(shout: userShoutMaker.text));
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) => MyHome()));
@@ -98,7 +98,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                       controller: userShoutMaker,
                       onChanged: (value) {
                         setState(() {
-                          _enteredText = value;
+                          _thisText = value;
                         });
                       },
                       decoration: InputDecoration(
