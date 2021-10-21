@@ -32,6 +32,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
+        backgroundColor: Colors.cyan,
         title: new Text("SHOUT OUT!"),
         leading: CircleAvatar(
           radius: 5.0,

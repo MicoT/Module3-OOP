@@ -62,10 +62,10 @@ class Home extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Tweet()));
+              context, MaterialPageRoute(builder: (context) => ShoutMaker()));
         },
         child: Icon(Icons.edit),
-        backgroundColor: Theme.of(context).colorScheme.secondary,
+        backgroundColor: Color(0xFFF57F17),
       ),
     );
   }

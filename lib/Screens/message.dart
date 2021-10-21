@@ -30,7 +30,7 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
-                  backgroundImage: AssetImage('assets/DP.png'),
+                  backgroundImage: AssetImage('assets/Razer.jpg'),
                 ),
                 title: Text(
                   "RAZER",
@@ -42,7 +42,7 @@ class Message extends StatelessWidget {
                 subtitle: Container(
                   padding: EdgeInsets.only(top: 5.0),
                   child: Text(
-                    "Try lang ito so kalma lang",
+                    "I have a new keyboard!",
                     style: TextStyle(color: Colors.white, fontSize: 15.0),
                   ),
                 ),
@@ -55,10 +55,10 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
-                  backgroundImage: AssetImage('assets/DP.png'),
+                  backgroundImage: AssetImage('assets/Genshin.jpg'),
                 ),
                 title: Text(
-                  "r/FlutterDev",
+                  "Genshin Impact",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -67,7 +67,7 @@ class Message extends StatelessWidget {
                 subtitle: Container(
                   padding: EdgeInsets.only(top: 5.0),
                   child: Text(
-                    "LORD SAID LET THERE BE TEXT.",
+                    "Want a sponsership?",
                     style: TextStyle(color: Colors.white, fontSize: 15.0),
                   ),
                 ),
@@ -80,10 +80,10 @@ class Message extends StatelessWidget {
               child: ListTile(
                 leading: CircleAvatar(
                   radius: 25.0,
-                  backgroundImage: AssetImage('assets/DP.png'),
+                  backgroundImage: AssetImage('assets/discord.jpg'),
                 ),
                 title: Text(
-                  "Flutter",
+                  "Discord",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 18.0,
@@ -92,7 +92,7 @@ class Message extends StatelessWidget {
                 subtitle: Container(
                   padding: EdgeInsets.only(top: 5.0),
                   child: Text(
-                    "the lord said let their be text.",
+                    "Talk to me :(",
                     style: TextStyle(color: Colors.white, fontSize: 15.0),
                   ),
                 ),
@@ -104,7 +104,7 @@ class Message extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.mail),
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Color(0xFFF57F17),
       ),
     );
   }

@@ -1,37 +1,57 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new, unused_field, duplicate_ignore, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, unnecessary_new, unused_field, duplicate_ignore, sized_box_for_whitespace, prefer_final_fields
 
 import 'package:flutter/material.dart';
 import 'package:twitter/home.dart';
 import 'create_shout.dart';
 
-final userTweet = TextEditingController();
+final userShoutMaker = TextEditingController();
 
-class Tweet extends StatefulWidget {
-  const Tweet({Key? key}) : super(key: key);
+class ShoutMaker extends StatefulWidget {
+  const ShoutMaker({Key? key}) : super(key: key);
 
   @override
-  _TweetState createState() => _TweetState();
+  _ShoutMakerState createState() => _ShoutMakerState();
 }
 
-class _TweetState extends State<Tweet> {
+class _ShoutMakerState extends State<ShoutMaker> {
   final _formKey = GlobalKey<FormState>();
   String _enteredText = '';
-
+  bool _lock = false;
   @override
   Widget build(BuildContext context) {
     // ignore: unnecessary_new
     return new Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.cyan,
         actions: <Widget>[
           Padding(
             padding: EdgeInsets.only(right: 20),
-            child: GestureDetector(
-              onTap: () {
-                userShout.add(new Shouttext(shout: userTweet.text));
-                Navigator.pushReplacement(
-                    context, MaterialPageRoute(builder: (context) => MyHome()));
+            child: ElevatedButton(
+              onPressed: () async {
+                setState(() {
+                  _lock = true;
+                });
+                if (_enteredText.isNotEmpty) {
+                  userShout.add(new Shouttext(shout: userShoutMaker.text));
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => MyHome()));
+                } else {
+                  const snackBar = SnackBar(
+                      backgroundColor: Color(0xFFD50000),
+                      content: Text("I can't hear anything...",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w900)));
+
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                }
               },
               child: Icon(Icons.campaign_outlined),
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Color(0xFFF57F17)),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(90)))),
             ),
           ),
         ],
@@ -75,7 +95,7 @@ class _TweetState extends State<Tweet> {
                       keyboardType: TextInputType.multiline,
                       minLines: 1,
                       maxLines: 50,
-                      controller: userTweet,
+                      controller: userShoutMaker,
                       onChanged: (value) {
                         setState(() {
                           _enteredText = value;
@@ -83,7 +103,7 @@ class _TweetState extends State<Tweet> {
                       },
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: 'Whats Happening?',
+                        hintText: 'Shout something?',
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 20),
                       ),
                     ),
