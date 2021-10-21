@@ -121,7 +121,15 @@ class Search extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          const snackBar = SnackBar(
+              backgroundColor: Colors.grey,
+              content: Text("Just for display!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.w900)));
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
         child: Icon(Icons.search),
         backgroundColor: Color(0xFFF57F17),
       ),

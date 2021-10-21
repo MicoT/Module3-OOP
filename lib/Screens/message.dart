@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors, deprecated_member_use
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, unnecessary_new, use_key_in_widget_constructors, deprecated_member_use, unused_local_variable
 
 import 'package:flutter/material.dart';
 
@@ -102,7 +102,15 @@ class Message extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          const snackBar = SnackBar(
+              backgroundColor: Colors.grey,
+              content: Text("Just for display!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.w900)));
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
         child: Icon(Icons.mail),
         backgroundColor: Color(0xFFF57F17),
       ),

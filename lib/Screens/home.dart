@@ -31,8 +31,9 @@ class Home extends StatelessWidget {
                       shrinkWrap: true,
                       itemCount: userShout.length,
                       itemBuilder: (context, index) {
-                        return Center(
+                        return Card(
                           child: ListTile(
+                            tileColor: Color(0xff15202C),
                             leading: CircleAvatar(
                               radius: 25.0,
                               backgroundImage: AssetImage('assets/swag.gif'),

@@ -65,6 +65,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
           ),
         ],
       ),
+      backgroundColor: Color(0xff1B2939),
       body: Center(
         child: Form(
           key: _formKey,
@@ -114,6 +115,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                         border: InputBorder.none,
                         hintText: 'Shout something?',
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 20),
+                        counterStyle: TextStyle(color: Colors.orange),
                         suffixIcon: IconButton(
                           onPressed: userShoutMaker.clear,
                           icon: Icon(Icons.clear),
