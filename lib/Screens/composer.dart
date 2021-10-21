@@ -24,6 +24,13 @@ class _ShoutMakerState extends State<ShoutMaker> {
     return new Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan,
+        title: Center(
+          child: Image.asset(
+            'assets/logo.png',
+            fit: BoxFit.contain,
+            height: 38,
+          ),
+        ),
         actions: <Widget>[
           Padding(
             padding: EdgeInsets.only(right: 20),
@@ -36,7 +43,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                   userShout.add(new Shouttext(shout: userShoutMaker.text));
                   userShoutMaker.clear();
                   const snackBar = SnackBar(
-                      backgroundColor: Color(0xFF00C853),
+                      backgroundColor: Color(0xFFD50000),
                       content: Text("Loud and clear!",
                           textAlign: TextAlign.center,
                           style: TextStyle(
