@@ -87,6 +87,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                     height: 300,
                     width: 265,
                     child: TextFormField(
+                      style: TextStyle(color: Colors.white),
                       autofocus: true,
                       maxLength: 240,
                       keyboardType: TextInputType.multiline,
