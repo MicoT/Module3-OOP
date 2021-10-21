@@ -133,8 +133,8 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         controller: controller,
       ),
       bottomNavigationBar: new Material(
-        shadowColor: Colors.white,
-        color: Theme.of(context).primaryColorDark,
+        shadowColor: Colors.black,
+        color: Colors.cyan,
         child: new TabBar(
           tabs: <Tab>[
             new Tab(

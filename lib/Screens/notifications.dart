@@ -10,6 +10,7 @@ class Notificationn extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColorDark,
+          automaticallyImplyLeading: false,
           bottom: TabBar(
             indicatorColor: Theme.of(context).primaryColorDark,
             tabs: <Widget>[
