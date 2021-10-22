@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
             context, MaterialPageRoute(builder: (context) => MyHome()));
       } else {
         const snackBar = SnackBar(
+            duration: Duration(seconds: 1),
             backgroundColor: Color(0xFFD50000),
             content: Text("Error: Please Use Admin Credentials",
                 textAlign: TextAlign.center,

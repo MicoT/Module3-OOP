@@ -43,7 +43,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                   userShout.add(new Shouttext(shout: userShoutMaker.text));
                   userShoutMaker.clear();
                   const snackBar = SnackBar(
-                      backgroundColor: Color(0xFF00E676),
+                      backgroundColor: Color(0xFFD50000),
                       content: Text("Loud and clear!",
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -55,6 +55,7 @@ class _ShoutMakerState extends State<ShoutMaker> {
                 } else {
                   const snackBar = SnackBar(
                       backgroundColor: Color(0xFFD50000),
+                      duration: Duration(seconds: 1),
                       content: Text("I can't hear anything...",
                           textAlign: TextAlign.center,
                           style: TextStyle(

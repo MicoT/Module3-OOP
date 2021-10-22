@@ -104,6 +104,7 @@ class Message extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           const snackBar = SnackBar(
+              duration: Duration(seconds: 1),
               backgroundColor: Color(0xFFD50000),
               content: Text("Just for display!",
                   textAlign: TextAlign.center,
